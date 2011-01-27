@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rubyler</title>
+  <%= stylesheet_link_tag 'reset', 'main' %>
+  <%= javascript_include_tag 'jquery.min', 'rails', 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <h1>Rubyler</h1>
+
+  <% if notice %>
+  <p id="notice"><%= notice %></p>
+  <% end %>
+
+  <div id="content">
+    <%= yield %>
+  </div>
+
+  <div id="footer">  
+    <% if user_signed_in? %>  
+    Signed in as <%= current_user.email %>. Not you?  
+    <%= link_to "Sign out", destroy_user_session_path %>  
+    <% end %>
+    <p>Blog made with Ruby on Rails. 'Reader Theme' by <a href="http://www.darakilicoglu.com">Dara Kilicoglu</a></p>
+  </div>
+
+</body>
+</html>
