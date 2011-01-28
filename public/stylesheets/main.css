@@ -1,10 +1,10 @@
-a { text-decoration:none; border-bottom:1px solid #333; color:#333;}
+a { text-decoration:none; border-bottom:1px solid #444; color:#444;}
 a:hover { border-bottom:0; }
 
-body { background: #EEE; /* url(../images/baseline.png); */ }
-body, input, textarea { font:16px/24px "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia; color: #333; }
+body { background: #EEE; url(../images/baseline.png); }
+body, input, textarea { font:16px/24px "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia; color: #444; }
 
-.edit-buttons { margin-top:24px; text-align:right; }
+.edit-buttons { margin-top:24px; text-align:right; height:24px; overflow:hidden;}
 .edit-buttons a { border-bottom:0; font:11px/24px "Helvetica Neue"; margin-right:10px; color:#333; padding:4px 5px; text-decoration:none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 .edit-buttons a:hover { background:#FFF; }
 
@@ -12,15 +12,6 @@ h1, h2, h3 { font-weight:normal; }
 h1 { font-size:36px; line-height:48px; text-align: center; margin:24px 0; }
 h2 { font-size:20px; line-height:24px; }
 h3 { font-size:20px; }
-
-pre { 
-	font-family: Monaco,"Lucia Console", "DejaVu Sans Mono", "Courier 10 Pitch", "Nimbus Mono L", "Courier New", Courier, monospace; 
-	width: 500px;
-	overflow:auto;
-	margin: 24px 0;
-	font-size: 13px;
-	line-height:18px;
-}
 
 input[type='text'], input[type='password'] {
 	width: 100%;
@@ -58,7 +49,7 @@ p { margin-bottom: 24px; }
 }
 
 #content {
-	width:500px; 
+	width:580px; 
 	margin:0 auto;
 }
 
