@@ -2,7 +2,7 @@ a { text-decoration:none; border-bottom:1px solid #333; color:#333;}
 a:hover { border-bottom:0; }
 
 body { background: #EEE; /* url(../images/baseline.png); */ }
-body, input, textarea { font:16px/24px font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia; color: #333; }
+body, input, textarea { font:16px/24px "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia; color: #333; }
 
 .edit-buttons { margin-top:24px; text-align:right; }
 .edit-buttons a { border-bottom:0; font:11px/24px "Helvetica Neue"; margin-right:10px; color:#333; padding:4px 5px; text-decoration:none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
