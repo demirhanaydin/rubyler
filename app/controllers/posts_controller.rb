@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => 'index'
   
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb
@@ -61,7 +61,7 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
-    @post = Post.find(params[:id])
+    @post = Post.find_by_title_in_url(params[:id])
     if @post.user == current_user
       respond_to do |format|
         if @post.update_attributes(params[:post])
