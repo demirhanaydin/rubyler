@@ -13,7 +13,7 @@ h1 { font-size:36px; line-height:48px; text-align: center; margin:24px 0; }
 h2 { font-size:20px; line-height:24px; }
 h3 { font-size:20px; }
 
-pre, code { margin:24px 0; font-family: "Monaco"; font-size:14px; }
+pre { width:500px; overflow:auto; margin:24px 0; font-family: "Monaco"; font-size:13px; line-height:18px;}
 
 input[type='text'], input[type='password'] {
 	width: 100%;

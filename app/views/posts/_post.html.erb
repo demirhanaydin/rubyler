@@ -6,7 +6,7 @@
   
   <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago</div>
   
-  <div class="post-body"><%= raw post.body %></div>
+  <div class="post-body"><%= post.body %></div>
   
   <% if post.user == current_user %>
     <div class="edit-buttons">

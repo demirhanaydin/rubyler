@@ -80,7 +80,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.xml
   def destroy
-    @post = Post.find(params[:id])
+    @post = Post.find_by_title_in_url(params[:id])
     if @post.user == current_user
       @post.destroy
     else
