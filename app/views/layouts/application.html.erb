@@ -4,6 +4,8 @@
   <title>Rubyler</title>
   <%= stylesheet_link_tag 'reset', 'main' %>
   <%= javascript_include_tag 'jquery.min', 'rails', 'application' %>
+  <script type="text/javascript" src="http://use.typekit.com/xrc0lle.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -22,8 +24,20 @@
     Signed in as <%= current_user.email %>. Not you?  
     <%= link_to "Sign out", destroy_user_session_path %>  
     <% end %>
-    <p>Blog made with Ruby on Rails. 'Reader Theme' by <a href="http://www.darakilicoglu.com">Dara Kilicoglu</a></p>
+    <p>Rubyler blog application is hosted on <a href="http://www.heroku.com/">Heroku</a>. 'Reader Theme' by <a href="http://www.darakilicoglu.com">Dara Kilicoglu</a></p>
   </div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18549898-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 
 </body>
 </html>
