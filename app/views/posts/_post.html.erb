@@ -1,10 +1,10 @@
 <div class="post">
   
   <div class="post-title">
-    <h2><%= link_to post.title, post %></h2>
+    <h2><%= link_to post.title, post, :'data-discuss-identifier' => post.id %></h2>
   </div>
   
-  <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago</div>
+  <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <%= link_to ("", post_path(post, :anchor => 'disqus_thread')) %></div>
   
   <div class="post-body">
     <%= raw coderay(post.body) %>

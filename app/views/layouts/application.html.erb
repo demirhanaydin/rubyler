@@ -26,7 +26,15 @@
     <% end %>
     <p>Rubyler blog application is hosted on <a href="http://www.heroku.com/">Heroku</a>. 'Reader Theme' by <a href="http://www.darakilicoglu.com">Dara Kilicoglu</a></p>
   </div>
-
+  <script type="text/javascript">
+      var disqus_shortname = 'rubyler';
+      (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18549898-1']);
