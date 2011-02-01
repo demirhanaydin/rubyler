@@ -76,3 +76,5 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
     text-decoration: none !important;
     font-style: normal;
 }
+
+a.dsq-collapse-toggle, .dsq-avatar a { border:none; }
