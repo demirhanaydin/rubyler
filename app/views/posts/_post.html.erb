@@ -1,7 +1,7 @@
 <div class="post">
   
   <div class="post-title">
-    <h2><%= link_to post.title, post_path(post, :'data-discuss-identifier' => post.id, :only_path => false) %></h2>
+    <h2><%= link_to (post.title, post_path(post, :only_path => false), :'data-discuss-identifier' => post.id) %></h2>
   </div>
   
   <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <%= link_to ("", post_path(post, :anchor => 'disqus_thread', :only_path => false)) %></div>
