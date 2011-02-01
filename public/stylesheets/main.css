@@ -63,9 +63,16 @@ p { margin-bottom: 24px; }
 
 #footer a { color:#AAA; border-bottom:1px solid #AAA;}
 
-.post { margin-bottom: 48px; }
+.post { margin-bottom: 72px; }
 .post .author-date-line { margin-bottom: 24px; font-size:14px; }
 
 
 /* Sign in form */
 #signin-form { width:50%; }
+
+
+/*Disqus*/
+a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
+    text-decoration: none !important;
+    font-style: normal;
+}
