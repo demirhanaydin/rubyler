@@ -4,7 +4,8 @@
     <h2><%= link_to (post.title, post_path(post, :only_path => false), :'data-discuss-identifier' => post.id) %></h2>
   </div>
   
-  <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <%= link_to ("", post_path(post, :anchor => 'disqus_thread', :only_path => false)) %></div>
+  <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <iframe src="http://www.facebook.com/plugins/comments.php?href=<%= raw post_path(post, :only_path => false) %>&permalink=1" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:16px;" allowTransparency="true"></iframe> 
+</div>
   
   <div class="post-body">
     <%= raw coderay(post.body) %>

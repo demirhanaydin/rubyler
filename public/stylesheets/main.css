@@ -63,6 +63,8 @@ p { margin-bottom: 24px; }
 
 #footer a { color:#AAA; border-bottom:1px solid #AAA;}
 
+div.author-date-line iframe {display:inline; height:14px; vertical-align:middle; padding-bottom:3px; padding-left:5px;}
+
 .post { margin-bottom: 72px; }
 .post .author-date-line { margin-bottom: 24px; font-size:14px; }
 
