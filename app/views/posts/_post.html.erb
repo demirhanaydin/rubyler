@@ -1,20 +1,25 @@
 <div class="post">
   
-  <div class="post-title">
-    <h2><%= link_to (post.title, post_path(post, :only_path => false), :'data-discuss-identifier' => post.id) %></h2>
-  </div>
+  <div class="inner">
   
-  <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <%= link_to ("", post_path(post, :anchor => 'disqus_thread', :only_path => false)) %></div>
-  
-  <div class="post-body">
-    <%= raw coderay(post.body) %>
-  </div>
-  
-  <% if post.user == current_user %>
-    <div class="edit-buttons">
-      <%= link_to 'Show', post %>
-      <%= link_to 'Edit', edit_post_path(post) %>
-      <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    <div class="post-title">
+      <h2><%= link_to (post.title, post_path(post, :only_path => false), :'data-discuss-identifier' => post.id) %></h2>
     </div>
-  <% end %>
+
+    <div class="author-date-line">by <%= post.user.fullname %> — <%= time_ago_in_words(post.created_at) %> ago — <%= link_to ("", post_path(post, :anchor => 'disqus_thread', :only_path => false)) %></div>
+    
+    <div class="post-body">
+      <%= raw coderay(post.body) %>
+    </div>
+
+    <% if post.user == current_user %>
+      <div class="edit-buttons">
+        <%= link_to 'Show', post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    <% end %>
+        
+  </div>
+  
 </div>

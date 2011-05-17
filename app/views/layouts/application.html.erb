@@ -9,10 +9,13 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <h1><%= link_to "Rubyler", :root %></h1>
-
+  
+  <div id="header">
+    &nbsp;
+  </div>
+  
   <% if notice %>
-  <p id="notice"><%= notice %></p>
+    <p id="notice"><%= notice %></p>
   <% end %>
 
   <div id="content">

@@ -1,12 +1,10 @@
 .CodeRay {  
-/*  background-color: #FFF;  */
-  border:1px dashed #CCC;
-	font-family: Monaco,"Lucia Console", "DejaVu Sans Mono", "Courier 10 Pitch", "Nimbus Mono L", "Courier New", Courier, monospace; 
-  color: #444;  
-	padding:0 8px;
-  overflow: auto;  
-  font-size: 15px;  
-  margin: 24px 0;
+  font-family: "droid-sans-mono-1", "droid-sans-mono-2", Monaco, "Lucia Console", "DejaVu Sans Mono", "Courier 10 Pitch", "Nimbus Mono L", "Courier New", Courier, monospace; 
+  color: #666;  
+  overflow: hidden;  
+  font-size: 14px;  
+  margin: 20px 0;
+  
 }  
 .CodeRay pre {  
   margin: 0px;  
@@ -14,7 +12,7 @@
 }  
 
 .CodeRay .an { color: #333333; }			/* html attribute */  
-.CodeRay .c  { color: #AABB99; font-style:italic;}			/* comment */  
+.CodeRay .c  { color: #999999; }			/* comment */  
 .CodeRay .ch { color: #333333; }			/* escaped character */  
 .CodeRay .cl { color: #444444; text-decoration:underline;}			/* class */  
 .CodeRay .co { color: #444444; text-decoration:underline; }			/* constant */  
@@ -27,7 +25,7 @@
 .CodeRay .pp { color: #333333; }			/* doctype */  
 .CodeRay .r  { color: #333333; font-weight:bold;}			/* keyword */  
 .CodeRay .rx { color: #333333; }			/* regex */  
-.CodeRay .s  { background:#FFF; color: #333333; }			/* string */  
+.CodeRay .s  { color: #333333; }			/* string */  
 .CodeRay .sy { color: #333333; font-weight:bold;}			/* symbol */  
 .CodeRay .ta { color: #333333; }			/* html tag */  
 .CodeRay .pc { color: #333333; }			/* boolean */
