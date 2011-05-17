@@ -1,1 +1,14 @@
-<div id="comments"><fb:comments href= <%= raw post_path(post, :only_path => false) %>  num_posts="5" width="580"></fb:comments></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'rubyler';
+  var disqus_identifier = <%= raw post.id.to_s.to_json %>;
+  var disqus_url = <%= raw post_path(post, :only_path => false).to_s.to_json %>;
+  var disqus_title =  <%= raw post.title.to_s.to_json %>;
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
