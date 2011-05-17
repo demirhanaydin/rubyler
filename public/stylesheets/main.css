@@ -60,7 +60,7 @@ p { margin-bottom: 24px; }
 }
 
 #content {
-	width:640px; 
+	width:600px; 
   margin:0 auto;
 }
 
@@ -75,7 +75,7 @@ p { margin-bottom: 24px; }
 #footer a { color:#AAA; border-bottom:1px solid #AAA;}
 
 div#posts { }
-.post { margin-bottom: 4em; padding:1em 1em 0 1em;}
+.post { margin-bottom: 4em; }
 .post .author-date-line { font-family: 'Lucida Grande', verdana, sans-serif; font-size:0.75em; margin-bottom:1.5em; color:#999; }
 
 /* Sign in form */
@@ -83,6 +83,7 @@ div#posts { }
 
 
 /*Disqus*/
+
 a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
     text-decoration: none !important;
     font-style: normal;
