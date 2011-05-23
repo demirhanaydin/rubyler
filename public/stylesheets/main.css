@@ -2,7 +2,7 @@ a { text-decoration:none; color:#888; }
 a:hover { color:#c90000; }
 
 body, input, textarea { 
-  background: #FFFFFF url(../images/back.jpg);
+  background: #FFFFFF;
   font:17px/1.4 "rooney-web-1", "rooney-web-2", Georgia, 'Times New Roman', Times, serif;
   color:#474747;
 }
