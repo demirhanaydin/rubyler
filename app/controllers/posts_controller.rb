@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   
   def index
     @posts = Post.all(:order => "created_at desc")
+    @feedposts = Post.all(:select => "title, body, created_at", :order => "created_at DESC", :limit => 20)
 
     respond_to do |format|
       format.html # index.html.erb
