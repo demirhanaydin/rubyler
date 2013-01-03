@@ -5,6 +5,8 @@ gem 'devise'
 gem "jquery-rails"
 gem "coderay"  
 gem "RedCloth"
+gem "thin"
+gem "pg"
 
 group :development, :test do
   gem "sqlite3", :require => "sqlite3"
