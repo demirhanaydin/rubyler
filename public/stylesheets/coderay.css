@@ -1,6 +1,6 @@
 .CodeRay {  
   font-family: "droid-sans-mono-1", "droid-sans-mono-2", Monaco, "Lucia Console", "DejaVu Sans Mono", "Courier 10 Pitch", "Nimbus Mono L", "Courier New", Courier, monospace; 
-  color: #666;  
+  color: #444444;  
   overflow: hidden;  
   font-size: 14px;  
   margin: 20px 0;
@@ -11,21 +11,21 @@
   padding: 0px;  
 }  
 
-.CodeRay .an { color: #333333; }			/* html attribute */  
+.CodeRay .an { color: #444444; }			/* html attribute */  
 .CodeRay .c  { color: #999999; }			/* comment */  
-.CodeRay .ch { color: #333333; }			/* escaped character */  
+.CodeRay .ch { color: #444444; }			/* escaped character */  
 .CodeRay .cl { color: #444444; text-decoration:underline;}			/* class */  
 .CodeRay .co { color: #444444; text-decoration:underline; }			/* constant */  
-.CodeRay .fl { color: #333333; }			/* float */  
-.CodeRay .fu { color: #333333; }			/* function */  
-.CodeRay .gv { color: #333333; }			/* global variable */  
-.CodeRay .i  { color: #333333; }			/* integer */  
-.CodeRay .il { color: #333333; }			/* inline code */  
+.CodeRay .fl { color: #444444; }			/* float */  
+.CodeRay .fu { color: #444444; }			/* function */  
+.CodeRay .gv { color: #444444; }			/* global variable */  
+.CodeRay .i  { color: #444444; }			/* integer */  
+.CodeRay .il { color: #444444; }			/* inline code */  
 .CodeRay .iv { color: #09BF5F; font-weight:bold;}			/* instance variable */  
-.CodeRay .pp { color: #333333; }			/* doctype */  
-.CodeRay .r  { color: #333333; font-weight:bold;}			/* keyword */  
-.CodeRay .rx { color: #333333; }			/* regex */  
-.CodeRay .s  { color: #333333; }			/* string */  
-.CodeRay .sy { color: #333333; font-weight:bold;}			/* symbol */  
-.CodeRay .ta { color: #333333; }			/* html tag */  
-.CodeRay .pc { color: #333333; }			/* boolean */
+.CodeRay .pp { color: #444444; }			/* doctype */  
+.CodeRay .r  { color: #444444; font-weight:bold;}			/* keyword */  
+.CodeRay .rx { color: #444444; }			/* regex */  
+.CodeRay .s  { color: #444444; }			/* string */  
+.CodeRay .sy { color: #444444; font-weight:bold;}			/* symbol */  
+.CodeRay .ta { color: #444444; }			/* html tag */  
+.CodeRay .pc { color: #444444; }			/* boolean */

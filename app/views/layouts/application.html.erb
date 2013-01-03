@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rubyler</title>
-  <%= auto_discovery_link_tag(:rss, "http://rubyler.com/posts.rss") %>
-  <%= stylesheet_link_tag 'reset', 'coderay', 'main' %>
-  <%= javascript_include_tag 'jquery.min', 'rails', 'application' %>
-  <script type="text/javascript" src="http://use.typekit.com/xrc0lle.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-  <%= csrf_meta_tag %>
+	<title>Rubyler</title>
+	<%= auto_discovery_link_tag(:rss, "http://rubyler.com/posts.rss") %>
+	<%= stylesheet_link_tag 'reset', 'coderay', 'main' %>
+	<%= javascript_include_tag 'jquery.min', 'rails', 'application' %>
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+	<%= csrf_meta_tag %>
 </head>
+
 <body>
-  
-  <div id="header">
-    &nbsp;
-  </div>
-  
-  <% if notice %>
-    <p id="notice"><%= notice %></p>
-  <% end %>
+	<div id="header">
+	</div>
 
-  <div id="content">
-    <%= yield %>
-  </div>
+	<% if notice %><p id="notice"><%= notice %></p><% end %>
 
-  <div id="footer">  
-    <% if user_signed_in? %>  
-    Signed in as <%= current_user.email %>. Not you?  
-    <%= link_to "Sign out", destroy_user_session_path %>  
-    <% end %>
-    <p>Rubyler blog is hosted on <a href="http://www.heroku.com/">Heroku</a>. 'Reader Theme' by <a href="http://www.darakilicoglu.com">Dara Kilicoglu</a></p>
-  </div>
-  
-  <script type="text/javascript">
-    var disqus_shortname = 'rubyler';
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-  </script>
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-18549898-1']);
-    _gaq.push(['_trackPageview']);
+	<div id="content">
+		<%= yield %>
+	</div>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+	<div id="footer">  
+		<p>2011'den günümüze... Rubyler <a href="http://www.heroku.com/">Heroku</a>'da çalışmaktadır. <% if user_signed_in? %><%= link_to "Çıkış Yap", destroy_user_session_path %>
+		<% end %></p>
+	</div>
+
+	<script type="text/javascript">
+		var disqus_shortname = 'rubyler';
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	</script>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-18549898-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 
 </body>
 </html>
